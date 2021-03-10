@@ -1,12 +1,8 @@
 // 
 
 /**
- * An example of how to write unit tests.
- * Use this as a basis to build a more complete Test.cpp file.
- * 
- * IMPORTANT: Please write more tests - the tests here are only for example and are not complete.
  *
- * AUTHORS: <Please write your names here>
+ * AUTHORS: yuval yahod
  * 
  * Date: 2021-02
  */
@@ -32,9 +28,9 @@ string nospaces(string input) {
 }
 
 TEST_CASE("Good snowman code") {
-    CHECK(nospaces(snowman(12423222)) == nospaces("_===_\n(-,o)/\n/(] [)\n (" ")\n"));
+    CHECK(nospaces(snowman(12423222)) == nospaces("_===_\n(-.o)/\n/(] [)\n (\" \")\n"));
     CHECK(nospaces(snowman(11111111)) == nospaces("_===_\n(.,.)\n<( : )>\n( : )\n"));
-    CHECK(nospaces(snowman(11111122)) == nospaces("_===_\n(.,.)\n<(] [)>\n(" ")\n"));
+    CHECK(nospaces(snowman(11111122)) == nospaces("_===_\n(.,.)\n<(] [)>\n(\" \")\n"));
     CHECK(nospaces(snowman(11111133)) == nospaces("_===_\n(.,.)\n<(> <)>\n(___)\n"));
     CHECK(nospaces(snowman(11111144)) == nospaces("_===_\n(.,.)\n<(   )>\n(   )\n"));
     CHECK(nospaces(snowman(22221411)) == nospaces("___\n.....\n(o.o)\n<( : )\n( : )\n"));
@@ -42,10 +38,10 @@ TEST_CASE("Good snowman code") {
     CHECK(nospaces(snowman(22222211)) == nospaces("___\n.....\n \\(o.o)/\n( : )\n( : )\n"));
     CHECK(nospaces(snowman(22222224)) == nospaces("___\n.....\n \\(o.o)/\n(] [)\n(   )\n"));
     CHECK(nospaces(snowman(22222211)) == nospaces("___\n.....\n \\(o.o)/\n( : )\n( : )\n"));
-    CHECK(nospaces(snowman(31423222)) == nospaces("_\n /_\\\n(-,o)/\n/(] [)\n (" ")"));
+    CHECK(nospaces(snowman(31423222)) == nospaces("_\n /_\\\n(-,o)/\n/(] [)\n (\" \")"));
     CHECK(nospaces(snowman(31423233)) == nospaces("_\n /_\\\n(-,o)/\n/(> <)\n (___)"));
     CHECK(nospaces(snowman(33333333)) == nospaces("_\n /_\\\n(O_O)\n/(> <)\\\n (___)"));
-    CHECK(nospaces(snowman(34123412)) == nospaces("_\n /_\\\n(. o)\n/( : )\n (" ")"));
+    CHECK(nospaces(snowman(34123412)) == nospaces("_\n /_\\\n(. o)\n/( : )\n (\" \")"));
     CHECK(nospaces(snowman(43434343)) == nospaces("___ \n(_*_)\n (-_O)\n(   )\\\n (___)"));
     CHECK(nospaces(snowman(43214321)) == nospaces("___ \n(_*_)\n (o_.)\n(] [)\\\n ( : )"));
     CHECK(nospaces(snowman(44444444)) == nospaces("___ \n(_*_)\n (- -)\n(   )\n (   )"));

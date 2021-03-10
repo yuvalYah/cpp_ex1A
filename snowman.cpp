@@ -7,7 +7,6 @@
 
 namespace ariel {
 	string snowman(int x){
-    	
         return "";
     }
 }
